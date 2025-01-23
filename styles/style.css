@@ -14,6 +14,10 @@
 .display-flex{
     display: flex;
 }
+.navbar, .banner, .curriculum{
+    max-width: 1160px;
+    margin: 0 auto;
+}
 
 .text-dark{
     color: #111111;
@@ -36,6 +40,7 @@
 /* nav related styles */
 .navbar{
 justify-content: space-between;
+align-items: center;
 }
 .nav-item{
     list-style-type: none;
@@ -44,17 +49,65 @@ justify-content: space-between;
 .nav-link{
     text-decoration: none;
 }
-.navbar, .banner{
-    max-width: 1160px;
-    margin: 0 auto;
+.nav-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.nav-btn{
+    padding: 10px 10px;
+    width: 197px;
+    border: none;
+    border-radius: 12px;
+    background-color: #FEA301;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 10px;
+}
+.nav-btn:hover{
+    background-color: #111111;
+}
+.nav-text{
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 /* banner related styles */
-
+.banner{
+gap: 50px;
+align-items: center;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.banner-btn{
+        padding: 10px 10px;
+        width: 197px;
+        border: none;
+        border-radius: 12px;
+        background-color: #111111;
+        font-weight: 600;
+        font-size: 20px;
+        gap: 10px;
+    }
+    .banner-btn:hover{
+        background-color: #FEA301;
+    }
 
 /* curriculum related styles */
-
-
+.curriculum{
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+.curriculum-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
 /* stories related styles */
 
 
