@@ -73,6 +73,7 @@
     font-weight: 600;
     font-size: 20px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .nav-btn:hover {
@@ -109,6 +110,7 @@
     font-weight: 600;
     font-size: 20px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .banner-btn:hover {
@@ -144,8 +146,10 @@
     box-shadow: 0 0 28.3 0.94 rgba(0, 0, 0, 0.05);
     background: linear-gradient(#DEF5FF, rgba(255, 255, 255, 0));
     width: 367px;
-    height: 476px;
+    /* height: 476px; */
     border-radius: 18.86px;
+    padding: 50px;
+    cursor: pointer;
 
 }
 
@@ -154,8 +158,10 @@
     box-shadow: 0 0 28.3 0.94 rgba(0, 0, 0, 0.05);
     background: linear-gradient(#FFF4DC, rgba(255, 255, 255, 0));
     width: 367px;
-    height: 476px;
+    /* height: 476px; */
     border-radius: 18.86px;
+    padding: 50px;
+    cursor: pointer;
 }
 
 .card-section-3 {
@@ -163,8 +169,10 @@
     box-shadow: 0 0 28.3 0.94 rgba(0, 0, 0, 0.05);
     background: linear-gradient(#F2E8FF, rgba(255, 255, 255, 0));
     width: 367px;
-    height: 476px;
+    /* height: 476px; */
     border-radius: 18.86px;
+    padding: 50px;
+    cursor: pointer;
 }
 
 .curriculum-title {
@@ -178,18 +186,10 @@
     background: none;
 }
 
-.card-btn-1:hover {
-    background-color: #111111;
-}
-
 .card-btn-2 {
     color: #F0AA00;
     border: none;
     background: none;
-}
-
-.card-btn-2:hover {
-    background-color: #111111;
 }
 
 .card-btn-3 {
@@ -198,16 +198,13 @@
     background: none;
 }
 
-.card-btn-3:hover {
-    background-color: #111111;
-}
-
 .round {
     align-items: center;
     justify-content: center;
     text-decoration: none;
     margin-bottom: 32px;
     gap: 10px;
+    cursor: pointer;
 }
 
 .round-btn {
@@ -216,6 +213,7 @@
     border-radius: 50%;
     background-color: #FEA301;
     color: #F7F7F7;
+    cursor: pointer;
 }
 
 /* stories related styles */
@@ -224,20 +222,76 @@
     justify-content: center;
     align-items: center;
     margin-top: 60px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
-.story-box-container{
+
+.story-box-container {
     justify-content: center;
     align-items: center;
 }
-.story-box{
+
+.story-box {
     justify-content: center;
     align-items: center;
+    text-align: left;
+
+}
+
+.box-left {
+    width: 540px;
+    height: 630px;
+    background-color: #FFFFFF;
+    margin: 19px;
+    border-radius: 16px;
+    padding: 5px 5px;
 }
 
 .box-right {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 601px;
+    /* height: 622px; */
+}
+
+.small-box {
+    /* width: 290px;
+    height: 301px; */
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 16px;
+    gap: 19px;
+    padding: 5px 5px;
+}
+
+.date-btn-1 {
+    width: 174px;
+    height: 47px;
+    background-color: #3CD8E8;
+    border: none;
+    border-radius: 47.93px;
+    gap: 19px;
+    margin-top: -150%;
+    cursor: pointer;
+}
+.date-btn-2 {
+    width: 174px;
+    height: 47px;
+    background-color: #95B226;
+    border: none;
+    border-radius: 47.93px;
+    gap: 19px;
+    margin-top: -150%;
+    cursor: pointer;
+}
+.date-btn-3 {
+    width: 174px;
+    height: 47px;
+    background-color: #5D58F0;
+    border: none;
+    border-radius: 47.93px;
+    gap: 19px;
+    margin-top: -100%;
+    cursor: pointer;
 }
 
 .view-btn {
@@ -249,6 +303,9 @@
     font-weight: 600;
     font-size: 20px;
     gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .view-btn:hover {
@@ -269,12 +326,14 @@
 
 }
 
-.footer-menu {}
-
 .footer-item {
     text-align: left;
     list-style: none;
     text-decoration: none;
+    
+}
+.footer-social{
+    cursor: pointer;
 }
 
 /* marquee tag related styles */
