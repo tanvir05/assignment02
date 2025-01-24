@@ -46,6 +46,7 @@
 
 /* nav related styles */
 .navbar {
+    /* display: block; */
     justify-content: space-between;
     align-items: center;
 }
@@ -74,6 +75,8 @@
     font-size: 20px;
     gap: 10px;
     cursor: pointer;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .nav-btn:hover {
@@ -85,12 +88,18 @@
     font-size: 1.25rem;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 /* banner related styles */
 .banner {
     gap: 50px;
     align-items: center;
 }
-
+.hero-banner {
+    width: 100%;
+}
 .banner-title {
     font-weight: 700;
     font-size: 3.5rem;
@@ -273,6 +282,7 @@
     margin-top: -150%;
     cursor: pointer;
 }
+
 .date-btn-2 {
     width: 174px;
     height: 47px;
@@ -283,6 +293,7 @@
     margin-top: -150%;
     cursor: pointer;
 }
+
 .date-btn-3 {
     width: 174px;
     height: 47px;
@@ -330,9 +341,10 @@
     text-align: left;
     list-style: none;
     text-decoration: none;
-    
+
 }
-.footer-social{
+
+.footer-social {
     cursor: pointer;
 }
 
@@ -355,4 +367,68 @@
     /* padding-bottom: 5px; */
 }
 
-/* media query */
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+
+    html,
+    body,
+    footer {
+        width: 100%;
+        height: 100%;
+        margin: 1px;
+        padding: 1px;
+        overflow-x: hidden;
+    }
+
+    .mobile-menu {
+        display: block;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .icon{
+        height: 10%;
+        width: 10%;
+        margin-left: 5px;
+        float: right;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .cards,
+    .story-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner {
+        height: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .round-btn {
+        display: none;
+    }
+
+    .box-left {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+    }
+
+}
